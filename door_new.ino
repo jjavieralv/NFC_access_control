@@ -210,7 +210,7 @@ void loop(void) {
     if(access(uid)){
       Serial.println("Tag granted, opening door :)");
       Serial.println("\n\n");
-      door_opened;
+      door_opened();
     }else{
       Serial.print("Tag is not allowed :(");
       Serial.println("\n\n");
